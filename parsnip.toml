@@ -16,18 +16,19 @@ $git_metrics\
 $time"""
 
 [directory]
-style = 'cyan'
 read_only = ' w!'
-read_only_style = 'dimmed yellow'
+read_only_style = 'yellow'
+truncate_to_repo = false
 truncation_symbol = '_/'
+style = 'cyan'
 
 [character]
 success_symbol = '[>](green)'
 error_symbol = '[>](bold red)'
 vimcmd_symbol = '[<](green)'
-vimcmd_replace_one_symbol = '[r](purple)'
-vimcmd_replace_symbol = '[R](purple)'
-vimcmd_visual_symbol = '[v](bold yellow)'
+vimcmd_replace_one_symbol = '[r](bold purple)'
+vimcmd_replace_symbol = '[R](bold purple)'
+vimcmd_visual_symbol = '[v](bold purple)'
 
 [status]
 disabled = false
@@ -35,6 +36,7 @@ format = '[($signal_name/)$status]($style) '
 pipestatus = true
 pipestatus_format = '[$pipestatus]($style) '
 pipestatus_segment_format = '[($signal_name/)$status]($style)'
+style = 'bold red'
 
 [cmd_duration]
 min_time = 1000
